@@ -1,0 +1,11 @@
+<script>
+	if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+		if (window.navigator.standalone == true) {
+			initialize();
+		}else{
+			document.write('<p>Tap the + button and choose "Add to Home Screen"</p>');
+		}
+	}else{
+		document.location.href = 'iphone.html';
+	}
+</script>
